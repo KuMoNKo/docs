@@ -283,8 +283,8 @@ The `onIcon()` and `offIcon()` methods support the name of any Blade icon compon
 Toggle::make($name)
     ->autofocus() // Autofocus the field.
     ->inline() // Render the toggle inline with its label.
-    ->offIcon() // Set the icon that should be displayed when the toggle is off.
-    ->onIcon() // Set the icon that should be displayed when the toggle is on.
+    ->offIcon($icon) // Set the icon that should be displayed when the toggle is off.
+    ->onIcon($icon) // Set the icon that should be displayed when the toggle is on.
     ->stacked(); // Render the toggle under its label.
 ```
 
