@@ -98,10 +98,13 @@ Checkbox::make($name)
 DatePicker::make($name)
     ->autofocus() // Autofocus the field.
     ->displayFormat($format = 'F j, Y') // Set the display format of the field, using PHP date formatting tokens.
+    ->firstDayOfWeek($day = 1) // Set the first day of the week in the calendar view, with 1 being Monday, and 0 or 7 being Sunday.
     ->format($format = 'Y-m-d') // Set the storage format of the field, using PHP date formatting tokens.
     ->maxDate($date) // Set the maximum date that can be selected.
     ->minDate($date) // Set the minimum date that can be selected.
-    ->placeholder($placeholder); // Set the placeholder for when the field is empty. It supports localization strings.
+    ->placeholder($placeholder) // Set the placeholder for when the field is empty. It supports localization strings.
+    ->weekStartsOnMonday() // Set the first day of the week to Monday in the calendar view.
+    ->weekStartsOnSunday(); // Set the first day of the week to Sunday in the calendar view.
 ```
 
 ### Date-time Picker {#fields-date-time-picker}
@@ -110,10 +113,13 @@ DatePicker::make($name)
 DateTimePicker::make($name)
     ->autofocus() // Autofocus the field.
     ->displayFormat($format = 'F j, Y H:i:s') // Set the display format of the field, using PHP date formatting tokens.
+    ->firstDayOfWeek($day = 1) // Set the first day of the week in the calendar view, with 1 being Monday, and 0 or 7 being Sunday.
     ->format($format = 'Y-m-d H:i:s') // Set the storage format of the field, using PHP date formatting tokens.
     ->maxDate($date) // Set the maximum date that can be selected.
     ->minDate($date) // Set the minimum date that can be selected.
     ->placeholder($placeholder) // Set the placeholder for when the field is empty. It supports localization strings.
+    ->weekStartsOnMonday() // Set the first day of the week to Monday in the calendar view.
+    ->weekStartsOnSunday() // Set the first day of the week to Sunday in the calendar view.
     ->withoutSeconds(); // Hide the seconds input.
 ```
 
