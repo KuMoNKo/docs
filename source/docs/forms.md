@@ -26,6 +26,7 @@ toc: |
       - [Fieldset](#layout-fieldset)
       - [Tabs](#layout-tabs)
       - [Group](#layout-group)
+      - [Placeholder](#layout-placeholder)
   - [Dependent Fields](#dependent-fields)
   - [Context Customization](#context-customization)
   - [Developing Custom Components](#custom-development)
@@ -588,6 +589,24 @@ public static function form(Form $form)
             Components\Group::make([
                 // ...
             ]),
+        ]);
+}
+```
+
+### Placeholder {#layout-placeholder}
+
+Placeholders can be used to render text-only "fields" within your forms. Each placeholder has a value, which is cannot be changed by the user.
+
+```php
+use Filament\Resources\Forms\Components;
+use Filament\Resources\Forms\Form;
+
+public static function form(Form $form)
+{
+    return $form
+        ->schema([
+            // ...
+            Components\Placeholder::make('website', 'filamentadmin.com'),
         ]);
 }
 ```
