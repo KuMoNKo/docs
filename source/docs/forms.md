@@ -274,6 +274,7 @@ TextInput::make($name)
     ->numeric() // Require a numeric value to be provided.
     ->password() // Obfuscate the field's value.
     ->placeholder($placeholder) // Set the placeholder for when the field is empty. It supports localization strings.
+    ->postfix($postfix) // Set a postfix label to be displayed after the input.
     ->prefix($prefix) // Set a prefix label to be displayed before the input.
     ->tel() // Require a valid telephone number to be provided.
     ->type($type = 'text') // Set the input's HTML type.
