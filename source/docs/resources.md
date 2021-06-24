@@ -231,12 +231,12 @@ class CreateCustomer extends CreateRecord
     
     protected function beforeFill()
     {
-        // Runs before the form fields are populated with their default values.
+        // Runs before the model is populated with their default values.
     }
     
     protected function afterFill()
     {
-        // Runs after the form fields are populated with their default values.
+        // Runs after the model is populated with their default values.
     }
     
     protected function beforeValidate()
@@ -270,12 +270,12 @@ class EditCustomer extends EditRecord
     
     protected function beforeFill()
     {
-        // Runs before the form fields are populated from the database.
+        // Runs before the model is populated from the database.
     }
     
     protected function afterFill()
     {
-        // Runs after the form fields are populated from the database.
+        // Runs after the model is populated from the database.
     }
     
     protected function beforeValidate()
